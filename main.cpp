@@ -16,7 +16,7 @@ int main() {
     
     Roster classRoster;
 
-    // Parse studentData array, create student objects from each element, and add them to classRoster.
+    // Parse studentData array, create student objects from each element, and add them to classRoster
     for (int i = 0; i < 5; i++) {
         classRoster.ParseStudentData(studentData[i]);
     }
@@ -53,7 +53,7 @@ int main() {
     classRoster.Remove("A3");
     cout << endl;
     
-    // Call Destructor to release memory allocated by classRoster (set classRosterArray pointers to NULL).
+    // Call Destructor to release memory allocated by classRoster (set classRosterArray pointers to NULL)
     classRoster.~Roster();
     
     return 0;

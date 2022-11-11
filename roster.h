@@ -23,7 +23,7 @@ public:
     void PrintInvalidEmails();
     void PrintByDegreeProgram(DegreeProgram degreeProgram);
     ~Roster();
-    Student* classRosterArray[5]; // Array of pointers, not objects
+    Student* classRosterArray[5]; // Array of pointers
 private:
     const int ARR_SIZE = 5;
     int craIndex = 0;

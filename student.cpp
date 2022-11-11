@@ -37,11 +37,11 @@ string Student::GetFirstName() { return firstName; }
 string Student::GetLastName() { return lastName; }
 string Student::GetEmail() { return emailAddress; }
 int Student::GetStudentAge() { return age; }
-// Getter for the daysInCourse data member returns a pointer (memory address) to the array, not the values from the array
-int* Student::GetDaysInCourse() { return daysInCourse; }
+int* Student::GetDaysInCourse() { return daysInCourse; } // Get pointer to the daysInCourse array
 DegreeProgram Student::GetDegreeProgram() { return degreeProgram; }
 
-// Format for printing: A1 [tab] First Name: John [tab] Last Name: Smith [tab] Age: 20 [tab]daysInCourse: {35, 40, 55} Degree Program: Security
+// Format for printing:
+// A1 [tab] First Name: John [tab] Last Name: Smith [tab] Age: 20 [tab]daysInCourse: {35, 40, 55} Degree Program: Security
 void Student::Print() {
     cout << studentID;
     cout << "\tFirst Name: " << firstName;
